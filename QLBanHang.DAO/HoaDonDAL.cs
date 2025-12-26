@@ -4,13 +4,13 @@ using System.Linq;
 using QLBanHang.DAO;
 using QLBanHang.DTO;
 
-namespace QLBanHang.DAL
+namespace QLBanHang.DAO
 { 
     /// Lớp DAL xử lý truy vấn dữ liệu cho Hóa đơn và Chi tiết hóa đơn 
     public class HoaDonDAL
     {
         private QLBanHangDataContext db = new QLBanHangDataContext();
-         
+
         /// Thêm hóa đơn mới và chi tiết hóa đơn
         /// Sử dụng Transaction để đảm bảo tính toàn vẹn dữ liệu 
         public bool ThemHoaDon(HoaDonDTO hoaDon, List<ChiTietHoaDonDTO> chiTietList)

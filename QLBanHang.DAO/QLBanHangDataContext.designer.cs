@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLBanHang.DAO
+namespace QLBanHang.DAL
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -48,7 +48,7 @@ namespace QLBanHang.DAO
     #endregion
 		
 		public QLBanHangDataContextDataContext() : 
-				base(global::QLBanHang.DAO.Properties.Settings.Default.QLBanHangConnectionString, mappingSource)
+				base(global::QLBanHang.DAL.Properties.Settings.Default.QLBanHangConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

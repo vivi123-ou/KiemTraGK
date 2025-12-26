@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using QLBanHang.DTO;
-using QLBanHang.DAO;
+using QLBanHang.DAL;
 
 namespace QLBanHang.DAL
 {
@@ -14,7 +14,7 @@ namespace QLBanHang.DAL
     public class KhachHangDAL
     {
         private QLBanHangDataContext db = new QLBanHangDataContext();
-         
+
         /// Lấy danh sách tất cả khách hàng 
         public List<KhachHangDTO> GetAllKhachHang()
         {
