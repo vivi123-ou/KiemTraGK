@@ -45,7 +45,7 @@ namespace QLBanHang.GUI
             Application.Exit();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs ej
         {
 
         }

@@ -22,7 +22,7 @@ namespace QLBanHang.GUI
             InitializeComponent();
 
         }
-         
+
         /// Sự kiện Load form - khởi tạo giá trị mặc định 
         private void frmBaoCao_Load(object sender, EventArgs e)
         {
@@ -36,7 +36,7 @@ namespace QLBanHang.GUI
             // Hiển thị hướng dẫn
             lblKetQua.Text = "Vui lòng chọn loại báo cáo muốn xem";
         }
-         
+
         /// TRUY VẤN LINQ 1: Danh sách hóa đơn theo khoảng ngày
         /// Yêu cầu đề bài: Hiển thị danh sách hóa đơn trong khoảng thời gian 
         private void btnHoaDonTheoNgay_Click(object sender, EventArgs e)
