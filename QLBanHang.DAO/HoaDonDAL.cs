@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using QLBanHang.DAO;
+using QLBanHang.DAL;
 using QLBanHang.DTO;
 
-namespace QLBanHang.DAO
+namespace QLBanHang.DAL
 { 
     /// Lớp DAL xử lý truy vấn dữ liệu cho Hóa đơn và Chi tiết hóa đơn 
     public class HoaDonDAL
