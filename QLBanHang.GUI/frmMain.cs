@@ -15,6 +15,34 @@ namespace QLBanHang.GUI
         public frmMain()
         {
             InitializeComponent();
+            // Đăng ký các event handlers
+            btnSanPham.Click += btnSanPham_Click;
+            btnHoaDon.Click += btnHoaDon_Click;
+            btnBaoCao.Click += btnBaoCao_Click;
+            btnThoat_Click.Click += btnThoat_Click_Click;
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            frmSanPham frm = new frmSanPham();
+            frm.ShowDialog();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            frmHoaDon frm = new frmHoaDon();
+            frm.ShowDialog();
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            frmBaoCao frm = new frmBaoCao();
+            frm.ShowDialog();
+        }
+
+        private void btnThoat_Click_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

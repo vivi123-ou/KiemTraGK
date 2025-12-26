@@ -102,6 +102,7 @@
             this.Controls.Add(this.btnSanPham);
             this.Name = "frmMain";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

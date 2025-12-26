@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace QLBanHang.DTO
 {
-    internal class KhachHangDTO
+    public class KhachHangDTO
     {
+        public int MaKH { get; set; }
+        public string TenKH { get; set; }
+        public string DienThoai { get; set; }
+        public string DiaChi { get; set; }
+
+        public KhachHangDTO() { }
+
+        public KhachHangDTO(int maKH, string tenKH, string dienThoai, string diaChi)
+        {
+            MaKH = maKH;
+            TenKH = tenKH;
+            DienThoai = dienThoai;
+            DiaChi = diaChi;
+        }
     }
 }

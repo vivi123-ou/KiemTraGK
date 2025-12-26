@@ -9,12 +9,12 @@ namespace QLBanHang.BUS
     /// Kiểm tra dữ liệu đầu vào và gọi DAO 
     public class SanPhamBUS
     {
-        private SanPhamDAL daoSanPham = new SanPhamDAL();  
+        private SanPhamDAL dalSanPham = new SanPhamDAL();  
          
         /// Lấy danh sách tất cả sản phẩm 
         public List<SanPhamDTO> GetAllSanPham()
         {
-            return daoSanPham.GetAllSanPham();
+            return dalSanPham.GetAllSanPham();
         }
          
         /// Thêm sản phẩm mới với kiểm tra dữ liệu 
@@ -36,8 +36,8 @@ namespace QLBanHang.BUS
                 throw new Exception("Số lượng không được âm!");
             }
 
-            // Gọi DAO để thêm
-            return daoSanPham.ThemSanPham(sp);
+            // Gọi DAL để thêm
+            return dalSanPham.ThemSanPham(sp);
         }
          
         /// Sửa sản phẩm với kiểm tra dữ liệu 
@@ -65,7 +65,7 @@ namespace QLBanHang.BUS
             }
 
             // Gọi DAO để sửa
-            return daoSanPham.SuaSanPham(sp);
+            return dalSanPham.SuaSanPham(sp);
         }
          
         /// Xóa sản phẩm 
@@ -76,7 +76,7 @@ namespace QLBanHang.BUS
                 throw new Exception("Mã sản phẩm không hợp lệ!");
             }
 
-            return daoSanPham.XoaSanPham(maSP);
+            return dalSanPham.XoaSanPham(maSP);
         }
          
         /// Tìm kiếm sản phẩm theo tên 
@@ -87,13 +87,13 @@ namespace QLBanHang.BUS
                 return GetAllSanPham(); // Trả về tất cả nếu không nhập gì
             }
 
-            return daoSanPham.TimKiemSanPham(tenSP);
+            return dalSanPham.TimKiemSanPham(tenSP);
         }
          
         /// Lọc sản phẩm còn hàng 
         public List<SanPhamDTO> LocSanPhamConHang()
         {
-            return daoSanPham.LocSanPhamConHang();
+            return dalSanPham.LocSanPhamConHang();
         }
     }
 }

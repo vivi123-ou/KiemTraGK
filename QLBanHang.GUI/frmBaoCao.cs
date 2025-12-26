@@ -11,6 +11,7 @@ using QLBanHang.BUS;
 
 namespace QLBanHang.GUI
 {
+
     public partial class frmBaoCao : Form
     {
         // Khai báo BUS
@@ -239,6 +240,11 @@ namespace QLBanHang.GUI
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void frmBaoCao_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

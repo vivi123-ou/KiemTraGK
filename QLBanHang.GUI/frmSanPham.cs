@@ -14,6 +14,15 @@ namespace QLBanHang.GUI
         public frmSanPham()
         {
             InitializeComponent();
+            // Đăng ký các event handlers
+            this.Load += frmSanPham_Load;
+            btnThem.Click += btnThem_Click;
+            btnSua.Click += btnSua_Click;
+            btnXoa.Click += btnXoa_Click;
+            btnTimKiem.Click += btnTimKiem_Click;
+            btnLocConHang.Click += btnLocConHang_Click;
+            btnLamMoi.Click += btnLamMoi_Click;
+            dgvSanPham.CellClick += dgvSanPham_CellClick;
         }
          
         /// Sự kiện Load form - chạy khi form được mở 

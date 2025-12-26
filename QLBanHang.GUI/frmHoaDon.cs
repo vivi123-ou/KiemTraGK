@@ -26,11 +26,11 @@ namespace QLBanHang.GUI
         public frmHoaDon()
         {
             InitializeComponent();
-        }
 
-        /// <summary>
-        /// Sự kiện Load form - khởi tạo dữ liệu ban đầu
-        /// </summary>
+        }
+         
+
+        /// Sự kiện Load form - khởi tạo dữ liệu ban đầu 
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
             LoadComboNhanVien();
@@ -445,6 +445,11 @@ namespace QLBanHang.GUI
 
             // Focus về combo nhân viên
             cboNhanVien.Focus();
+        }
+
+        private void frmHoaDon_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
