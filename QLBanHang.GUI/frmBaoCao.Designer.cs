@@ -21,13 +21,32 @@
         }
 
         #region Windows Form Designer generated code
-
-        /// <summary>
+         
         /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        /// the contents of this method with the code editor. 
         private void InitializeComponent()
         {
+            this.grpHoaDonTheoNgay = new System.Windows.Forms.GroupBox();
+            this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnHoaDonTheoNgay = new System.Windows.Forms.Button();
+            this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.grpTopSanPham = new System.Windows.Forms.GroupBox();
+            this.btnTop3SanPham = new System.Windows.Forms.Button();
+            this.grpDoanhThu = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nudNam = new System.Windows.Forms.NumericUpDown();
+            this.btnDoanhThuTheoThang = new System.Windows.Forms.Button();
+            this.lblKetQua = new System.Windows.Forms.Label();
+            this.dgvKetQua = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.grpHoaDonTheoNgay.SuspendLayout();
+            this.grpTopSanPham.SuspendLayout();
+            this.grpDoanhThu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
+            // (Thêm code thiết kế các controls ở đây - tham khảo frmSanPham.Designer.cs để biết cách thiết lập)
             this.SuspendLayout();
             // 
             // frmBaoCao

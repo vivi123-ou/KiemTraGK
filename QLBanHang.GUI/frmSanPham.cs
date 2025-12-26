@@ -277,7 +277,9 @@ namespace QLBanHang.GUI
             txtTenSP.Focus(); // Đưa con trỏ về ô Tên SP
         }
 
-        private void frmSanPham_Load_1(object sender, EventArgs e)
+      
+
+        private void frmSanPham_Load_2(object sender, EventArgs e)
         {
 
         }

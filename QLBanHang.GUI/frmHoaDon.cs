@@ -446,10 +446,6 @@ namespace QLBanHang.GUI
             // Focus về combo nhân viên
             cboNhanVien.Focus();
         }
-
-        private void frmHoaDon_Load_1(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }

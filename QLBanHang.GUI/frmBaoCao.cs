@@ -20,6 +20,7 @@ namespace QLBanHang.GUI
         public frmBaoCao()
         {
             InitializeComponent();
+
         }
          
         /// Sự kiện Load form - khởi tạo giá trị mặc định 
@@ -241,10 +242,6 @@ namespace QLBanHang.GUI
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void frmBaoCao_Load_1(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }

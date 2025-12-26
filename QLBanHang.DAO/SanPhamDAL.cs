@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using QLBanHang.DTO;
 
-namespace QLBanHang.DAO
+namespace QLBanHang.DAL
 { 
     /// Lớp DAO xử lý truy vấn dữ liệu cho Sản phẩm
     /// Sử dụng LINQ to SQL, không dùng SqlCommand 
