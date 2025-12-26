@@ -23,8 +23,8 @@ namespace QLBanHang.DAL
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLBanHang")]
-	public partial class QLBanHangDataContextDataContext : System.Data.Linq.DataContext
-	{
+    public partial class QLBanHangDataContext : System.Data.Linq.DataContext
+    {
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
@@ -47,31 +47,31 @@ namespace QLBanHang.DAL
     partial void DeleteSanPham(SanPham instance);
     #endregion
 		
-		public QLBanHangDataContextDataContext() : 
+		public QLBanHangDataContext() : 
 				base(global::QLBanHang.DAL.Properties.Settings.Default.QLBanHangConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLBanHangDataContextDataContext(string connection) : 
+		public QLBanHangDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLBanHangDataContextDataContext(System.Data.IDbConnection connection) : 
+		public QLBanHangDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLBanHangDataContextDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public QLBanHangDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLBanHangDataContextDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public QLBanHangDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
